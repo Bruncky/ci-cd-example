@@ -1,4 +1,4 @@
-FROM python:3.10-bookworm
+FROM --platform=linux/amd64 python:3.10-bookworm
 
 # Copy and install requirements
 COPY requirements.txt requirements.txt
