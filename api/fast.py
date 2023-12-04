@@ -17,7 +17,15 @@ app.add_middleware(
 def root():
     response = {
         'greeting': 'Servus, griaß di!',    # This is a typical Bavarian greeting ;)
-        # 'timestamp': datetime.now()
+        'timestamp': datetime.now()
     }
 
     return response
+
+
+# PROJECT="le-wagon-1437"
+# IMAGE="new-cd-example"
+# REGION="europe-west1"
+# DOCKER_REPO_NAME="my-first-repo"
+# TAG="0.1"
+# IMAGE_URI=${REGION}-docker.pkg.dev/${PROJECT}/${DOCKER_REPO_NAME}/${IMAGE}:${TAG}
