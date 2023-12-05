@@ -9,7 +9,7 @@ on:
 
 jobs:
   build-and-run-pytest:
-  
+
     runs-on: ubuntu-latest
 
     steps:
@@ -33,7 +33,7 @@ jobs:
       run: docker build -f tests/Dockerfile.test -t api-test .
 
     # 5. Run test container
-    - name: Run testing Container
+    - name: Run testing Container in detatch mode
       run: docker run -d -e PORT=8000 --name api-test-container -p 8080:8000 api-test
 
     # 6. Run tests
