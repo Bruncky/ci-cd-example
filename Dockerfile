@@ -9,4 +9,5 @@ RUN pip install -r requirements.txt
 # Copy the main folder for the API
 COPY api api
 
-CMD uvicorn api.fast:app --host 0.0.0.0 --port $PORT
+CMD uvicorn api.fast:app --host 0.0.0.0 --port 80
+EXPOSE 80
