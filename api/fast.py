@@ -18,6 +18,7 @@ def root():
     response = {
         'greeting': 'Servus, griaß di!',    # This is a typical Bavarian greeting ;)
         'greeting2': 'Salut salut !!',    # This is a typical French greeting :P
+        'greeting3': 'おはようございます！',    # This is a typical French greeting :P
         'timestamp': datetime.now(),
     }
 
