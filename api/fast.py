@@ -16,7 +16,7 @@ app.add_middleware(
 @app.get('/')
 def root():
     response = {
-        'greeting': 'Bonjour!',    # This is a typical French greeting ;)
+        'greeting': 'Bonjour!!',    # This is a typical French greeting ;)
     }
 
     return response

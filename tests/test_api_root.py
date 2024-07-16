@@ -14,4 +14,4 @@ class TestApiRoot(unittest.TestCase):
         url = 'http://localhost:8080'
         result = requests.get(url).json()
 
-        self.assertEqual(result['greeting'], 'Bonjour!')
+        self.assertEqual(result['greeting'], 'Bonjour!!')
