@@ -36,6 +36,12 @@ jobs:
     - name: Run testing Container
       run: docker run -d -e PORT=8000 --name api-test-container -p 8080:8000 api-test
 
+    # 6. Wait for the API to start up
+    - name: Wait for API to be ready
+      run: |
+        sleep 10  # Adjust this if your API takes longer to start
+        docker logs api-test-container  # Useful to debug issues
+
     # 6. Run tests
     - name: Run tests on API
       run: make
