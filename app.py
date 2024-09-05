@@ -10,4 +10,6 @@ st.write('Add anythin here')
 
 x = np.linspace(1, 20)
 y = np.sin(x)
-plt.plot(x,y)
+fig = plt.plot(x,y)
+
+st.write(f'My plot {fig}')
