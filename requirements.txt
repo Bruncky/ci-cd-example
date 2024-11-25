@@ -1,7 +1,7 @@
 # Some example packages
-pandas
-numpy
-seaborn
+# pandas
+# numpy
+# seaborn
 
 # API-related packages
 fastapi
