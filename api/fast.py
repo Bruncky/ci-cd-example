@@ -17,7 +17,8 @@ app.add_middleware(
 def root():
     response = {
         'greeting': 'Servus, griaß di!',    # This is a typical Bavarian greeting ;)
-        'timestamp': datetime.now()
+        'timestamp': datetime.now(),
+        'greeting_german': "Servus, grüß Dich"
     }
 
     return response
