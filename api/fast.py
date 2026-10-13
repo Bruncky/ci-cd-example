@@ -16,6 +16,6 @@ app.add_middleware(
 @app.get('/')
 def root():
     response = {
-        'greeting': 'Olá! Como estás?'    }
+        'greeting': 'Ol! Como estás?'    }
 
     return response
